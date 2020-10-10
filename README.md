@@ -14,10 +14,14 @@ This is a simple 1v1 game. The game goes as follows:
 - CSS 3 (Vanilla)
 - JS (Vanilla)
 
+## Additional Features
+
+- Players can set the winning score
+- Select Themes
+
 ## Functionalities to be added
 
-1. Winning score to be set by players.
-2. Player name can be added.
-3. Theme settings.
-4. How to play option.
-5. Some more game modes.
+1. Player name can be added.
+2. Theme settings.
+3. How to play option.
+4. Some more game modes.

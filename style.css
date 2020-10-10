@@ -1,3 +1,71 @@
+/* ------------------------ Themes ----------------------------*/
+:root {
+  --main-color: #3498db;
+}
+
+.theme_settings {
+  background: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50px;
+  border-radius: 50px;
+  height: 80vh;
+  color: transparent;
+}
+
+.theme_color {
+  padding: 7px;
+  color: transparent;
+  height: 14.28%;
+  position: relative;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.inner_span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inner_span:hover {
+  transform: translate(-50%, -50%) scale(1.02);
+  border: 3px solid black;
+}
+
+.color-1 {
+  background: #3498db;
+}
+
+.color-2 {
+  background: red;
+}
+
+.color-3 {
+  background: #5f27cd;
+}
+
+.color-4 {
+  background: #44bd32;
+}
+
+.color-5 {
+  background: #e67e22;
+}
+
+.color-6 {
+  background: #f1c40f;
+}
+
+.color-7 {
+  background: black;
+}
+
 /* ------------------------ Global --------------------------- */
 
 * {
@@ -55,14 +123,16 @@ body {
   margin-bottom: 10px;
   position: relative;
   color: lightgrey;
+  cursor: default;
 }
 
 .player-score {
   text-align: center;
   font-size: 80px;
   font-weight: 200;
-  color: #3498db;
+  color: var(--main-color);
   margin-bottom: 130px;
+  cursor: default;
 }
 
 .active {
@@ -83,12 +153,13 @@ body {
 }
 
 .player-current-box {
-  background-color: #3498db;
+  background-color: var(--main-color);
   color: #fff;
   width: 40%;
   margin: 0 auto;
   padding: 12px;
   text-align: center;
+  cursor: default;
 }
 
 .player-current-label {
@@ -96,7 +167,7 @@ body {
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: bold;
-  color: #222;
+  color: white;
 }
 
 .player-current-score {
@@ -131,7 +202,7 @@ button:focus {
 }
 
 i {
-  color: #3498db;
+  color: var(--main-color);
   display: inline-block;
   margin-right: 15px;
   font-size: 32px;

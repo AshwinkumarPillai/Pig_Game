@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link type="text/css" rel="stylesheet" href="style.css">
         
@@ -37,6 +36,30 @@
             <input type="number" placeholder="Set Winning Score" class="final-score"/>
 
             <img src="./assets/dice-5.png" alt="Dice" class="dice">
+        </div>
+
+        <div class="theme_settings">
+            <div class="theme_color">
+                <span class="inner_span color-1"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="0">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-2"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="1">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-3"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="2">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-4"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="3">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-5"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="4">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-6"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="5">1</span>
+            </div>
+            <div class="theme_color">
+                <span class="inner_span color-7"  onclick="changeTheme(this.getAttribute('data-color-val'))" data-color-val="6">1</span>
+            </div>
         </div>
         
         <script src="app.js"></script>

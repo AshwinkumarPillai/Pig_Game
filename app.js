@@ -1,5 +1,5 @@
 let scores, roundScore, activePlayer, isplaying;
-
+let themes = ["#3498db", "red", "#5f27cd", "#44bd32", "#e67e22", "#f1c40f", "black"];
 init();
 
 function init() {
@@ -64,3 +64,7 @@ function nextPlayer() {
 }
 
 document.querySelector(".btn-new").addEventListener("click", init);
+
+function changeTheme(index) {
+  document.documentElement.style.setProperty("--main-color", themes[index]);
+}
