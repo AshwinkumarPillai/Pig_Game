@@ -136,7 +136,7 @@ i {
   margin-right: 15px;
   font-size: 32px;
   line-height: 1;
-  vertical-align: text-top;
+  transform: scale(1.2);
   margin-top: -4px;
   transition: margin 0.3s;
 }
