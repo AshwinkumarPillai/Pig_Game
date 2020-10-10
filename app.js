@@ -36,9 +36,12 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
 
 document.querySelector(".btn-hold").addEventListener("click", function () {
   if (isplaying) {
+    let fscore = document.querySelector(".final-score").value;
+    let win_score = 100;
+    if (fscore) win_score = fscore;
     scores[activePlayer] += roundScore;
     document.getElementById("score-" + activePlayer).textContent = scores[activePlayer];
-    if (scores[activePlayer] >= 100) {
+    if (scores[activePlayer] >= win_score) {
       isplaying = false;
       document.getElementById("name-" + activePlayer).textContent = "Winner!";
       document.querySelector(".dice").style.display = "none";
